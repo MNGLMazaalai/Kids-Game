@@ -7,3 +7,32 @@
     align-items: center;
     font-size: 27pt;
 }
+.title {
+    margin-top: 30pt;
+}
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E6E8FF;
+    width: 300pt;
+    height: 200pt;
+    border-radius: 10%;
+}
+.slider {
+    margin-top: 90pt;
+    height: 200pt;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homepage {
+    width: 375pt;
+    height: 1760pt;
+}
+.image {
+    width: 200pt;
+    height: 200pt;
+}

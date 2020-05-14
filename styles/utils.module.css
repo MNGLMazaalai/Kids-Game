@@ -2,9 +2,7 @@
     font-style: Noteworthy;
     font-weight: bold;
     color: #5D5757;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 27pt;
 }
 .title {
@@ -91,5 +89,5 @@
 }
 .box1 {
     position: absolute;
-    width: 50%;
+    width: 175pt;
 }

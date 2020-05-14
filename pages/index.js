@@ -3,7 +3,29 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Button from '../components/button'
 
+const images = "/images/categoryPictures/";
+function renderBigButton({pro}) {
+    const currentSrc = images + pro;
+    return (
+        <section className={utilStyles.new}>
+            <section className={utilStyles.box}>
+                <section className={utilStyles.space}/>
+                <section className={utilStyles.newbutton}/>
+            </section>
+            <section className={utilStyles.box}>
+                <section className={utilStyles.imagebox}>
+                    <img
+                    className={utilStyles.bigimage}
+                    src={currentSrc}
+                    />
+                </section>
+                <section className={utilStyles.text}>Амьтад</section>
+            </section>
+        </section>
+    );
+}
 export default function Home() {
+
     return (
     <section className={utilStyles.homepage}>
         <Head>
@@ -13,14 +35,11 @@ export default function Home() {
             {"Шинээр нэмэгдсэн"}
         </section>
         <section className={utilStyles.slider}>
-            <section className={utilStyles.new}>
-                <img
-                className={utilStyles.image}
-                src="/images/categoryPictures/girafe.png"
-                />
-                <section className={utilStyles.text}>
-                    Амьтад
-                </section>
+            {renderBigButton({pro: "girafe.png"})}
+        </section>
+        <section className={utilStyles.categories}>
+            <section className={utilStyles.line}>
+                
             </section>
         </section>
     </section>

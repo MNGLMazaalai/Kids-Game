@@ -4,8 +4,8 @@ import Link from 'next/link'
 import Button from '../components/button'
 
 const images = "/images/categoryPictures/";
-function renderBigButton({pro}) {
-    const currentSrc = images + pro;
+function renderBigButton({props, name}) {
+    const currentSrc = images + props;
     return (
         <section className={utilStyles.new}>
             <section className={utilStyles.box}>
@@ -19,13 +19,70 @@ function renderBigButton({pro}) {
                     src={currentSrc}
                     />
                 </section>
-                <section className={utilStyles.text}>Амьтад</section>
+                <section className={utilStyles.text}>{name}</section>
             </section>
         </section>
     );
 }
+function renderButton({props, name}) {
+    const currentSrc = images + props;
+    return (
+        <section className={utilStyles.normal}>
+            <section className={utilStyles.box1}>
+                <section className={utilStyles.space1}/>
+                <section className={utilStyles.button}/>
+            </section>
+            <section className={utilStyles.box1}>
+                <section className={utilStyles.imagebox1}>
+                    <img
+                    className={utilStyles.image}
+                    src={currentSrc}
+                    />
+                </section>
+                <section className={utilStyles.text}>{name}</section>
+            </section>
+        </section>
+    );
+}
+function renderCategory({list}) {
+    let res = [];
+    list.forEach(element => {
+        res.push (
+            <section className={utilStyles.line}>  
+                {renderButton({props: element[0][0], name: element[0][1]})}
+                {renderButton({props: element[1][0], name: element[1][1]})}
+            </section>
+        )
+    })
+    return res;
+}
 export default function Home() {
-
+    const list = [
+        [
+            ["body.png", "Хүний бие эрхтэн"],
+            ["rainbow.png", "Өнгөнүүд"],
+        ],
+        [
+            ["nature.png", "Байгаль"],
+            ["apple.png", "Жимс"],
+        ],
+        [
+            ["food.png", "Хоол"],
+            ["bus.png", "Тээврийн хэрэгсэл"],
+        ],
+        [
+            ["flags.png", "Туг далбаа"],
+            ["planets.png", "Од гараг"],
+        ],
+        [
+            ["job.png", "Мэргэжил"],
+            ["family.png", "Гэр бүл"],
+        ],
+        [
+            ["numbers.png", "Тоо"],
+            ["veggies.png", "Хүнсний ногоо"],
+        ]
+    ];
     return (
     <section className={utilStyles.homepage}>
         <Head>
@@ -35,12 +92,35 @@ export default function Home() {
             {"Шинээр нэмэгдсэн"}
         </section>
         <section className={utilStyles.slider}>
-            {renderBigButton({pro: "girafe.png"})}
+            {renderBigButton({props: "girafe.png", name: "Амьтад"})}
         </section>
+
         <section className={utilStyles.categories}>
-            <section className={utilStyles.line}>
-                
+            {renderCategory({list: list})}
+            {/* <section className={utilStyles.line}>
+                {renderButton({props: 'body.png', name: "Хүний бие эрхтэн"})}
+                {renderButton({props: 'rainbow.png', name: "Өнгөнүүд"})}
             </section>
+            <section className={utilStyles.line}>
+                {renderButton({props: 'nature.png', name: "Байгаль"})}
+                {renderButton({props: 'apple.png', name: "Жимс"})}
+            </section>
+            <section className={utilStyles.line}>
+                {renderButton({props: 'food.png', name: "Хоол"})}
+                {renderButton({props: 'bus.png', name: "Тээврийн хэрэгсэл"})}
+            </section>
+            <section className={utilStyles.line}>
+                {renderButton({props: 'flags.png', name: "Туг далбаа"})}
+                {renderButton({props: 'planets.png', name: "Од гараг"})}
+            </section>
+            <section className={utilStyles.line}>
+                {renderButton({props: 'job.png', name: "Мэргэжил"})}
+                {renderButton({props: 'family.png', name: "Гэр бүл"})}
+            </section>
+            <section className={utilStyles.line}>
+                {renderButton({props: 'numbers.png', name: "Тоо"})}
+                {renderButton({props: 'veggies.png', name: "Хүнсний ногоо"})}
+            </section> */}
         </section>
     </section>
     )

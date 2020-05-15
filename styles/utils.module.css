@@ -9,22 +9,19 @@
     margin-top: 30pt;
 }
 .new {
-    width: 300pt;
+    width: 100%;
     height: 300pt;
 }
 .normal {
     width: 50%;
     height: 300pt;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 .slider {
-    /* margin-top: 50pt; */
     height: 300pt;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
 }
 .categories {
     width: 100%;
@@ -85,9 +82,13 @@
 }
 .box {
     position: absolute;
-    width: 100%;
+    width: 300pt;
 }
 .box1 {
     position: absolute;
     width: 175pt;
+}
+.centerer {
+    width: 100%;
+    height: 170pt;
 }

@@ -92,35 +92,13 @@ export default function Home() {
             {"Шинээр нэмэгдсэн"}
         </section>
         <section className={utilStyles.slider}>
-            {renderBigButton({props: "girafe.png", name: "Амьтад"})}
+            <section className={utilStyles.box}>
+                {renderBigButton({props: "girafe.png", name: "Амьтад"})}
+            </section>
         </section>
 
         <section className={utilStyles.categories}>
             {renderCategory({list: list})}
-            {/* <section className={utilStyles.line}>
-                {renderButton({props: 'body.png', name: "Хүний бие эрхтэн"})}
-                {renderButton({props: 'rainbow.png', name: "Өнгөнүүд"})}
-            </section>
-            <section className={utilStyles.line}>
-                {renderButton({props: 'nature.png', name: "Байгаль"})}
-                {renderButton({props: 'apple.png', name: "Жимс"})}
-            </section>
-            <section className={utilStyles.line}>
-                {renderButton({props: 'food.png', name: "Хоол"})}
-                {renderButton({props: 'bus.png', name: "Тээврийн хэрэгсэл"})}
-            </section>
-            <section className={utilStyles.line}>
-                {renderButton({props: 'flags.png', name: "Туг далбаа"})}
-                {renderButton({props: 'planets.png', name: "Од гараг"})}
-            </section>
-            <section className={utilStyles.line}>
-                {renderButton({props: 'job.png', name: "Мэргэжил"})}
-                {renderButton({props: 'family.png', name: "Гэр бүл"})}
-            </section>
-            <section className={utilStyles.line}>
-                {renderButton({props: 'numbers.png', name: "Тоо"})}
-                {renderButton({props: 'veggies.png', name: "Хүнсний ногоо"})}
-            </section> */}
         </section>
     </section>
     )

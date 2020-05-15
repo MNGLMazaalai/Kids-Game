@@ -3,6 +3,7 @@
 import utilStyles from '../styles/utils.module.css'
 // import Button from '../components/button'
 // import Link from 'next/link'
+import list from '../data/category.json'
 
 const images = "/images/categoryPictures/"
 
@@ -29,7 +30,7 @@ export function renderBigButton({props, name}) {
 export function renderButton({props, name, color}) {
     const currentSrc = images + props
     return (
-        <section className={utilStyles.normal} >
+        <section className={utilStyles.normal} key={name}>
             <section className={utilStyles.box1}>
                 <section className={utilStyles.space1}/>
                 <section className={utilStyles.button} style={{backgroundColor: color}}/>
@@ -46,13 +47,16 @@ export function renderButton({props, name, color}) {
         </section>
     );
 }
-export function renderCategory({list}) {
-    let res = []
+export function renderCategory() {
+    let res = [], count = 0
     list.forEach(element => {
         res.push (
-            <section className={utilStyles.line}>  
-                {renderButton({props: element[0][0], name: element[0][1], color: element[0][2]})}
-                {renderButton({props: element[1][0], name: element[1][1], color: element[1][2]})}
+            <section className={utilStyles.line} key={count++}> 
+                {
+                    element.map(el => 
+                        renderButton({props: el.photo, name: el.name, color: el.color})
+                    )
+                }
             </section>
         )
     })

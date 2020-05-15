@@ -8,27 +8,72 @@
         {
             "photo": "rainbow.png",
             "name": "Өнгөнүүд",
+            "color": "#B6E0B1"
         }
-        ["rainbow.png", "Өнгөнүүд", "#B6E0B1"]
     ],
     [
-        ["nature.png", "Байгаль", "#E6E8FF"],
-        ["apple.png", "Жимс", "#FFEDE6"]
+        {
+            "photo": "nature.png",
+            "name": "Байгаль",
+            "color": "#E6E8FF"
+
+        },
+        {
+            "photo": "apple.png",
+            "name": "Жимс",
+            "color":"#FFEDE6"
+        }
     ],
     [
-        ["food.png", "Хоол", "#A7E5E5"],
-        ["bus.png", "Тээврийн хэрэгсэл", "#C5EBB4"]
+        {
+            "photo": "food.png",
+            "name": "Хоол",
+            "color": "#A7E5E5"
+        },
+        {
+            "photo": "bus.png",
+            "name": "Тээврийн хэрэгсэл",
+            "color": "#C5EBB4"
+        }
     ],
     [
-        ["flags.png", "Туг далбаа", "#FFE88F"],
-        ["planets.png", "Од гараг", "#FFEDE6"]
+        {
+            "photo": "flags.png",
+            "name": "Туг далбаа",
+            "color": "#FFE88F"
+
+        },
+        {
+            "photo": "planets.png",
+            "name": "Од гараг",
+            "color": "#FFEDE6"
+
+        }
     ],
     [
-        ["job.png", "Мэргэжил", "#40E6BE"],
-        ["family.png", "Гэр бүл", "#FFB28F"]
+        {
+            "photo": "job.png",
+            "name": "Мэргэжил",
+            "color": "#40E6BE"
+
+        },
+        {
+            "photo": "family.png",
+            "name": "Гэр бүл",
+            "color": "#FFB28F"
+        }
     ],
     [
-        ["numbers.png", "Тоо", "#E6E8FF"],
-        ["veggies.png", "Хүнсний ногоо", "#FFE6FF"]
+        {
+            "photo": "numbers.png",
+            "name": "Тоо",
+            "color": "#E6E8FF"
+
+        },
+        {
+            "photo": "veggies.png",
+            "name": "Хүнсний ногоо",
+            "color": "#FFE6FF"
+        }
     ]
 ]

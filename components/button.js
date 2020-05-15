@@ -11,12 +11,12 @@ export function renderBigButton({props, name}) {
         <section className={utilStyles.new}>
             <section className={utilStyles.box}>
                 <section className={utilStyles.space}/>
-                <section className={utilStyles.newbutton}/>
+                <section className={utilStyles.newButton}/>
             </section>
             <section className={utilStyles.box}>
                 <section className={utilStyles.imagebox}>
                     <img
-                    className={utilStyles.bigimage}
+                    className={utilStyles.newImage}
                     src={currentSrc}
                     />
                 </section>
@@ -29,12 +29,12 @@ export function renderButton({props, name, color}) {
     const currentSrc = images + props
     return (
         <section className={utilStyles.normal} key={name}>
-            <section className={utilStyles.box1}>
-                <section className={utilStyles.space1}/>
+            <section className={utilStyles.newBox}>
+                <section className={utilStyles.newSpace}/>
                 <section className={utilStyles.button} style={{backgroundColor: color}}/>
             </section>
-            <section className={utilStyles.box1}>
-                <section className={utilStyles.imagebox1}>
+            <section className={utilStyles.newBox}>
+                <section className={utilStyles.newImagebox}>
                     <img
                     className={utilStyles.image}
                     src={currentSrc}

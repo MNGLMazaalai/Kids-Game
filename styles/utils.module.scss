@@ -1,5 +1,7 @@
+$font : Noteworthy;
+
 .text {
-    font-style: Noteworthy;
+    font-style: $font;
     font-weight: bold;
     color: #5D5757;
     text-align: center;
@@ -33,7 +35,7 @@
 .imagebox {
     width: 100%;
 }
-.bigimage {
+.newImage {
     margin-top: 10pt;
     margin-left: 25%;
     width: 200pt;
@@ -50,19 +52,10 @@
     height: 100pt;
     width: 100%;
 }
-.space1 {
+.newSpace {
     z-index: -1;
     height: 50pt;
     width: 100%;
-}
-.newbutton {
-    position: absolute;
-    margin-bottom: 0;
-    background-color: #E6E8FF;
-    border-radius: 10%;
-    width: 300pt;
-    height: 200%;
-    z-index: -1;
 }
 .line {
     margin-top: 10%;
@@ -80,11 +73,20 @@
     height: 170pt;
     z-index: -1;
 }
+.newButton {
+    position: absolute;
+    margin-bottom: 0;
+    background-color: #E6E8FF;
+    border-radius: 10%;
+    width: 300pt;
+    height: 200%;
+    z-index: -1;
+}
 .box {
     position: absolute;
     width: 300pt;
 }
-.box1 {
+.newBox {
     position: absolute;
     width: 175pt;
 }

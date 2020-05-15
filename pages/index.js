@@ -18,7 +18,6 @@ export default function Home() {
         </section>
 
         <section className={utilStyles.categories}>
-            {/* {renderCategory({list: list})} */}
             {renderCategory()}
         </section>
     </section>

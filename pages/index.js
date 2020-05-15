@@ -24,13 +24,13 @@ function renderBigButton({props, name}) {
         </section>
     );
 }
-function renderButton({props, name}) {
+function renderButton({props, name, color}) {
     const currentSrc = images + props;
     return (
-        <section className={utilStyles.normal}>
+        <section className={utilStyles.normal} >
             <section className={utilStyles.box1}>
                 <section className={utilStyles.space1}/>
-                <section className={utilStyles.button}/>
+                <section className={utilStyles.button} style={{backgroundColor: color}}/>
             </section>
             <section className={utilStyles.box1}>
                 <section className={utilStyles.imagebox1}>
@@ -49,8 +49,8 @@ function renderCategory({list}) {
     list.forEach(element => {
         res.push (
             <section className={utilStyles.line}>  
-                {renderButton({props: element[0][0], name: element[0][1]})}
-                {renderButton({props: element[1][0], name: element[1][1]})}
+                {renderButton({props: element[0][0], name: element[0][1], color: element[0][2]})}
+                {renderButton({props: element[1][0], name: element[1][1], color: element[1][2]})}
             </section>
         )
     })
@@ -59,28 +59,28 @@ function renderCategory({list}) {
 export default function Home() {
     const list = [
         [
-            ["body.png", "Хүний бие эрхтэн"],
-            ["rainbow.png", "Өнгөнүүд"],
+            ["body.png", "Хүний бие эрхтэн", "#FFE6FF"],
+            ["rainbow.png", "Өнгөнүүд", "#B6E0B1"],
         ],
         [
-            ["nature.png", "Байгаль"],
-            ["apple.png", "Жимс"],
+            ["nature.png", "Байгаль", "#E6E8FF"],
+            ["apple.png", "Жимс", "#FFEDE6"],
         ],
         [
-            ["food.png", "Хоол"],
-            ["bus.png", "Тээврийн хэрэгсэл"],
+            ["food.png", "Хоол", "#A7E5E5"],
+            ["bus.png", "Тээврийн хэрэгсэл", "#C5EBB4"],
         ],
         [
-            ["flags.png", "Туг далбаа"],
-            ["planets.png", "Од гараг"],
+            ["flags.png", "Туг далбаа", "#FFE88F"],
+            ["planets.png", "Од гараг", "#FFEDE6"],
         ],
         [
-            ["job.png", "Мэргэжил"],
-            ["family.png", "Гэр бүл"],
+            ["job.png", "Мэргэжил", "#40E6BE"],
+            ["family.png", "Гэр бүл", "#FFB28F"],
         ],
         [
-            ["numbers.png", "Тоо"],
-            ["veggies.png", "Хүнсний ногоо"],
+            ["numbers.png", "Тоо", "#E6E8FF"],
+            ["veggies.png", "Хүнсний ногоо", "#FFE6FF"],
         ]
     ];
     return (

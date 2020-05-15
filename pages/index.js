@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import utilStyles from '../styles/utils.module.scss'
-import { renderBigButton, renderButton, renderCategory } from "../components/button";
+import { renderSlider, renderCategory } from "../components/button";
 export default function Home() {
 
     return (
@@ -13,7 +13,7 @@ export default function Home() {
         </section>
         <section className={utilStyles.slider}>
             <section className={utilStyles.box}>
-                {renderBigButton({props: "girafe.png", name: "Амьтад"})}
+                {renderSlider()}
             </section>
         </section>
 

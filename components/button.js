@@ -1,14 +1,15 @@
 // import Head from 'next/head'
 // import Link from 'next/link'
 import list from '../data/category.json'
+import newList from '../data/newCategory.json'
 import utilStyles from '../styles/utils.module.scss'
 
 const images = "/images/categoryPictures/"
 
-export function renderBigButton({props, name}) {
+export function renderNewButton({props, name}) {
     const currentSrc = images + props
     return (
-        <section className={utilStyles.new}>
+        <section className={utilStyles.new} key={name}>
             <section className={utilStyles.box}>
                 <section className={utilStyles.space}/>
                 <section className={utilStyles.newButton}/>
@@ -53,6 +54,13 @@ export function renderCategory() {
                 {element.map(el => renderButton({props: el.photo, name: el.name, color: el.color}))}
             </section>
         )
+    })
+    return res;
+}
+export function renderSlider() {
+    let res = []
+    newList.forEach(el => {
+        res.push(renderNewButton({props: el.photo, name: el.name, color: el.color}))
     })
     return res;
 }

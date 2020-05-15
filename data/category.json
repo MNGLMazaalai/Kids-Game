@@ -1,0 +1,34 @@
+[
+    [   
+        {
+            "photo": "body.png",
+            "name" : "Хүний бие эрхтэн",
+            "color": "#FFE6FF"
+        },
+        {
+            "photo": "rainbow.png",
+            "name": "Өнгөнүүд",
+        }
+        ["rainbow.png", "Өнгөнүүд", "#B6E0B1"]
+    ],
+    [
+        ["nature.png", "Байгаль", "#E6E8FF"],
+        ["apple.png", "Жимс", "#FFEDE6"]
+    ],
+    [
+        ["food.png", "Хоол", "#A7E5E5"],
+        ["bus.png", "Тээврийн хэрэгсэл", "#C5EBB4"]
+    ],
+    [
+        ["flags.png", "Туг далбаа", "#FFE88F"],
+        ["planets.png", "Од гараг", "#FFEDE6"]
+    ],
+    [
+        ["job.png", "Мэргэжил", "#40E6BE"],
+        ["family.png", "Гэр бүл", "#FFB28F"]
+    ],
+    [
+        ["numbers.png", "Тоо", "#E6E8FF"],
+        ["veggies.png", "Хүнсний ногоо", "#FFE6FF"]
+    ]
+]

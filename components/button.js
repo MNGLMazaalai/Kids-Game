@@ -1,63 +1,60 @@
 // import Head from 'next/head'
 // import styles from './layout.module.css'
-// import utilStyles from '../styles/utils.module.css'
+import utilStyles from '../styles/utils.module.css'
+// import Button from '../components/button'
 // import Link from 'next/link'
 
-// const name = 'Your Name'
-// export const siteTitle = 'Next.js Sample Website'
+const images = "/images/categoryPictures/"
 
-// export default function Layout({ children, home }) {
-//   return (
-//     <div className={styles.container}>
-//       <Head>
-//         {/* <link rel="icon" href="/favicon.ico" /> */}
-//         {/* <metaname="description"content="Learn how to build a personal website using Next.js"/> */}
-//         {/* <meta
-//           property="og:image"
-//           content={`https://og-image.now.sh/${encodeURI(
-//             siteTitle
-//           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-//         /> */}
-//         {/* <meta name="og:title" content={siteTitle} /> */}
-//         {/* <meta name="twitter:card" content="summary_large_image" /> */}
-//       </Head>
-//       <header className={styles.header}>
-//         {home ? (
-//           <>
-//             <img
-//               src="/images/profile.jpg"
-//               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-//               alt={name}
-//             />
-//             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-//           </>
-//         ) : (
-//           <>
-//             <Link href="/">
-//               <a>
-//                 <img
-//                   src="/images/profile.jpg"
-//                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-//                   alt={name}
-//                 />
-//               </a>
-//             </Link>
-//             <h2 className={utilStyles.headingLg}>
-//               <Link href="/">
-//                 <a className={utilStyles.colorInherit}>{name}</a>
-//               </Link>
-//             </h2>
-//           </>
-//         )}
-//       </header>
-//       <main>{children}</main>
-//       {!home && (
-//         <div className={styles.backToHome}>
-//           <Link href="/">
-//             <a>Back to home</a>
-//           </Link>
-//         </div>
-//       )}
-//     </div>
-//   )
-// }
+export function renderBigButton({props, name}) {
+    const currentSrc = images + props
+    return (
+        <section className={utilStyles.new}>
+            <section className={utilStyles.box}>
+                <section className={utilStyles.space}/>
+                <section className={utilStyles.newbutton}/>
+            </section>
+            <section className={utilStyles.box}>
+                <section className={utilStyles.imagebox}>
+                    <img
+                    className={utilStyles.bigimage}
+                    src={currentSrc}
+                    />
+                </section>
+                <section className={utilStyles.text}>{name}</section>
+            </section>
+        </section>
+    );
+}
+export function renderButton({props, name, color}) {
+    const currentSrc = images + props
+    return (
+        <section className={utilStyles.normal} >
+            <section className={utilStyles.box1}>
+                <section className={utilStyles.space1}/>
+                <section className={utilStyles.button} style={{backgroundColor: color}}/>
+            </section>
+            <section className={utilStyles.box1}>
+                <section className={utilStyles.imagebox1}>
+                    <img
+                    className={utilStyles.image}
+                    src={currentSrc}
+                    />
+                </section>
+                <section className={utilStyles.text}>{name}</section>
+            </section>
+        </section>
+    );
+}
+export function renderCategory({list}) {
+    let res = []
+    list.forEach(element => {
+        res.push (
+            <section className={utilStyles.line}>  
+                {renderButton({props: element[0][0], name: element[0][1], color: element[0][2]})}
+                {renderButton({props: element[1][0], name: element[1][1], color: element[1][2]})}
+            </section>
+        )
+    })
+    return res;
+}

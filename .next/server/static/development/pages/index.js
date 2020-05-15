@@ -88,32 +88,10 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "../next-server/lib/router-context":
-/*!**************************************************************!*\
-  !*** external "next/dist/next-server/lib/router-context.js" ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router-context.js");
-
-/***/ }),
-
-/***/ "../next-server/lib/utils":
-/*!*****************************************************!*\
-  !*** external "next/dist/next-server/lib/utils.js" ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/utils.js");
-
-/***/ }),
 
 /***/ "./components/button.js":
 /*!******************************!*\
@@ -129,16 +107,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderCategory", function() { return renderCategory; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _data_category_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/category.json */ "./data/category.json");
-var _data_category_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/category.json */ "./data/category.json", 1);
-var _jsxFileName = "C:\\Users\\G7\\Desktop\\react\\Kids-Game\\components\\button.js";
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/utils.module.scss */ "./styles/utils.module.scss");
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/macbook/Desktop/reactGame/Kids-Game/components/button.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // import Head from 'next/head'
-// import styles from './layout.module.css'
- // import Button from '../components/button'
 // import Link from 'next/link'
 
 
@@ -149,15 +123,15 @@ function renderBigButton({
 }) {
   const currentSrc = images + props;
   return __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.new,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.new,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.box,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -165,7 +139,7 @@ function renderBigButton({
       columnNumber: 13
     }
   }, __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.space,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.space,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -173,7 +147,7 @@ function renderBigButton({
       columnNumber: 17
     }
   }), __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.newbutton,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.newbutton,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -181,7 +155,7 @@ function renderBigButton({
       columnNumber: 17
     }
   })), __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.box,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -189,7 +163,7 @@ function renderBigButton({
       columnNumber: 13
     }
   }, __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.imagebox,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.imagebox,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -197,7 +171,7 @@ function renderBigButton({
       columnNumber: 17
     }
   }, __jsx("img", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.bigimage,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.bigimage,
     src: currentSrc,
     __self: this,
     __source: {
@@ -206,7 +180,7 @@ function renderBigButton({
       columnNumber: 21
     }
   })), __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -231,7 +205,7 @@ function renderButton({
       columnNumber: 9
     }
   }, __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box1,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.box1,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -239,7 +213,7 @@ function renderButton({
       columnNumber: 13
     }
   }, __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.space1,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.space1,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -247,7 +221,7 @@ function renderButton({
       columnNumber: 17
     }
   }), __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.button,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.button,
     style: {
       backgroundColor: color
     },
@@ -258,7 +232,7 @@ function renderButton({
       columnNumber: 17
     }
   })), __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.box1,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.box1,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -266,7 +240,7 @@ function renderButton({
       columnNumber: 13
     }
   }, __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.imagebox1,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.imagebox1,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -274,7 +248,7 @@ function renderButton({
       columnNumber: 17
     }
   }, __jsx("img", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.image,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.image,
     src: currentSrc,
     __self: this,
     __source: {
@@ -283,7 +257,7 @@ function renderButton({
       columnNumber: 21
     }
   })), __jsx("section", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.text,
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -375,449 +349,143 @@ function _interopRequireWildcard(obj) {
     };
   }
 
-  var cache = _getRequireWildcardCache();
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/utils.module.scss */ "./styles/utils.module.scss");
+/* harmony import */ var _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/button */ "./components/button.js");
+var _jsxFileName = "/Users/macbook/Desktop/reactGame/Kids-Game/pages/index.js";
 
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
 
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
 
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
+const images = "/images/categoryPictures/";
+function Home() {
+  const list = [[["body.png", "Хүний бие эрхтэн", "#FFE6FF"], ["rainbow.png", "Өнгөнүүд", "#B6E0B1"]], [["nature.png", "Байгаль", "#E6E8FF"], ["apple.png", "Жимс", "#FFEDE6"]], [["food.png", "Хоол", "#A7E5E5"], ["bus.png", "Тээврийн хэрэгсэл", "#C5EBB4"]], [["flags.png", "Туг далбаа", "#FFE88F"], ["planets.png", "Од гараг", "#FFEDE6"]], [["job.png", "Мэргэжил", "#40E6BE"], ["family.png", "Гэр бүл", "#FFB28F"]], [["numbers.png", "Тоо", "#E6E8FF"], ["veggies.png", "Хүнсний ногоо", "#FFE6FF"]]];
+  return __jsx("section", {
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.homepage,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 5
     }
-  }
-
-  newObj["default"] = obj;
-
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 9
+    }
+  }, __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 13
+    }
+  }, "Home page")), __jsx("section", {
+    className: `${_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.text} ${_styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.title}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 9
+    }
+  }, "Шинээр нэмэгдсэн"), __jsx("section", {
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.slider,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  }, __jsx("section", {
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.box,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 13
+    }
+  }, Object(_components_button__WEBPACK_IMPORTED_MODULE_3__["renderBigButton"])({
+    props: "girafe.png",
+    name: "Амьтад"
+  }))), __jsx("section", {
+    className: _styles_utils_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.categories,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 9
+    }
+  }, Object(_components_button__WEBPACK_IMPORTED_MODULE_3__["renderCategory"])({
+    list: list
+  })));
 }
-
-module.exports = _interopRequireWildcard;
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
-  \*******************************************************/
+/***/ "./styles/utils.module.scss":
+/*!**********************************!*\
+  !*** ./styles/utils.module.scss ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-module.exports = _typeof;
-
-/***/ }),
-
-/***/ "./node_modules/next/dist/client/link.js":
-/*!***********************************************!*\
-  !*** ./node_modules/next/dist/client/link.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-
-var _url = __webpack_require__(/*! url */ "url");
-
-var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "../next-server/lib/utils");
-
-var _router = _interopRequireDefault(__webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js"));
-
-var _router2 = __webpack_require__(/*! ../next-server/lib/router/router */ "./node_modules/next/dist/next-server/lib/router/router.js");
-
-function isLocal(href) {
-  var url = (0, _url.parse)(href, false, true);
-  var origin = (0, _url.parse)((0, _utils.getLocationOrigin)(), false, true);
-  return !url.host || url.protocol === origin.protocol && url.host === origin.host;
-}
-
-function memoizedFormatUrl(formatFunc) {
-  var lastHref = null;
-  var lastAs = null;
-  var lastResult = null;
-  return (href, as) => {
-    if (lastResult && href === lastHref && as === lastAs) {
-      return lastResult;
-    }
-
-    var result = formatFunc(href, as);
-    lastHref = href;
-    lastAs = as;
-    lastResult = result;
-    return result;
-  };
-}
-
-function formatUrl(url) {
-  return url && typeof url === 'object' ? (0, _utils.formatWithValidation)(url) : url;
-}
-
-var observer;
-var listeners = new Map();
-var IntersectionObserver = false ? undefined : null;
-var prefetched = {};
-
-function getObserver() {
-  // Return shared instance of IntersectionObserver if already created
-  if (observer) {
-    return observer;
-  } // Only create shared IntersectionObserver if supported in browser
-
-
-  if (!IntersectionObserver) {
-    return undefined;
-  }
-
-  return observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!listeners.has(entry.target)) {
-        return;
-      }
-
-      var cb = listeners.get(entry.target);
-
-      if (entry.isIntersecting || entry.intersectionRatio > 0) {
-        observer.unobserve(entry.target);
-        listeners.delete(entry.target);
-        cb();
-      }
-    });
-  }, {
-    rootMargin: '200px'
-  });
-}
-
-var listenToIntersections = (el, cb) => {
-  var observer = getObserver();
-
-  if (!observer) {
-    return () => {};
-  }
-
-  observer.observe(el);
-  listeners.set(el, cb);
-  return () => {
-    try {
-      observer.unobserve(el);
-    } catch (err) {
-      console.error(err);
-    }
-
-    listeners.delete(el);
-  };
+// Exports
+module.exports = {
+	"text": "utils_text__124Jp",
+	"title": "utils_title__24jaJ",
+	"new": "utils_new__1bGXd",
+	"normal": "utils_normal__1c89X",
+	"slider": "utils_slider__dH4vF",
+	"categories": "utils_categories__1f-eG",
+	"homepage": "utils_homepage__36868",
+	"imagebox": "utils_imagebox__1p98_",
+	"bigimage": "utils_bigimage__3Vp94",
+	"image": "utils_image__3vAiy",
+	"space": "utils_space__bkqKu",
+	"space1": "utils_space1__1Y4Wu",
+	"newbutton": "utils_newbutton__1A93D",
+	"line": "utils_line__Bf6KX",
+	"button": "utils_button__1fqwm",
+	"box": "utils_box__23BOk",
+	"box1": "utils_box1__UlXLO",
+	"centerer": "utils_centerer__2JmZW"
 };
 
-class Link extends _react.Component {
-  constructor(props) {
-    super(props);
-    this.p = void 0;
-
-    this.cleanUpListeners = () => {};
-
-    this.formatUrls = memoizedFormatUrl((href, asHref) => {
-      return {
-        href: (0, _router2.addBasePath)(formatUrl(href)),
-        as: asHref ? (0, _router2.addBasePath)(formatUrl(asHref)) : asHref
-      };
-    });
-
-    this.linkClicked = e => {
-      var {
-        nodeName,
-        target
-      } = e.currentTarget;
-
-      if (nodeName === 'A' && (target && target !== '_self' || e.metaKey || e.ctrlKey || e.shiftKey || e.nativeEvent && e.nativeEvent.which === 2)) {
-        // ignore click for new tab / new window behavior
-        return;
-      }
-
-      var {
-        href,
-        as
-      } = this.formatUrls(this.props.href, this.props.as);
-
-      if (!isLocal(href)) {
-        // ignore click if it's outside our scope (e.g. https://google.com)
-        return;
-      }
-
-      var {
-        pathname
-      } = window.location;
-      href = (0, _url.resolve)(pathname, href);
-      as = as ? (0, _url.resolve)(pathname, as) : href;
-      e.preventDefault(); //  avoid scroll for urls with anchor refs
-
-      var {
-        scroll
-      } = this.props;
-
-      if (scroll == null) {
-        scroll = as.indexOf('#') < 0;
-      } // replace state instead of push if prop is present
-
-
-      _router.default[this.props.replace ? 'replace' : 'push'](href, as, {
-        shallow: this.props.shallow
-      }).then(success => {
-        if (!success) return;
-
-        if (scroll) {
-          window.scrollTo(0, 0);
-          document.body.focus();
-        }
-      });
-    };
-
-    if (true) {
-      if (props.prefetch) {
-        console.warn('Next.js auto-prefetches automatically based on viewport. The prefetch attribute is no longer needed. More: https://err.sh/zeit/next.js/prefetch-true-deprecated');
-      }
-    }
-
-    this.p = props.prefetch !== false;
-  }
-
-  componentWillUnmount() {
-    this.cleanUpListeners();
-  }
-
-  getPaths() {
-    var {
-      pathname
-    } = window.location;
-    var {
-      href: parsedHref,
-      as: parsedAs
-    } = this.formatUrls(this.props.href, this.props.as);
-    var resolvedHref = (0, _url.resolve)(pathname, parsedHref);
-    return [resolvedHref, parsedAs ? (0, _url.resolve)(pathname, parsedAs) : resolvedHref];
-  }
-
-  handleRef(ref) {
-    if (this.p && IntersectionObserver && ref && ref.tagName) {
-      this.cleanUpListeners();
-      var isPrefetched = prefetched[this.getPaths().join( // Join on an invalid URI character
-      '%')];
-
-      if (!isPrefetched) {
-        this.cleanUpListeners = listenToIntersections(ref, () => {
-          this.prefetch();
-        });
-      }
-    }
-  } // The function is memoized so that no extra lifecycles are needed
-  // as per https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
-
-
-  prefetch(options) {
-    if (!this.p || true) return; // Prefetch the JSON page if asked (only in the client)
-
-    var paths = this.getPaths(); // We need to handle a prefetch error here since we may be
-    // loading with priority which can reject but we don't
-    // want to force navigation since this is only a prefetch
-
-    _router.default.prefetch(paths[
-    /* href */
-    0], paths[
-    /* asPath */
-    1], options).catch(err => {
-      if (true) {
-        // rethrow to show invalid URL errors
-        throw err;
-      }
-    });
-
-    prefetched[paths.join( // Join on an invalid URI character
-    '%')] = true;
-  }
-
-  render() {
-    var {
-      children
-    } = this.props;
-    var {
-      href,
-      as
-    } = this.formatUrls(this.props.href, this.props.as); // Deprecated. Warning shown by propType check. If the children provided is a string (<Link>example</Link>) we wrap it in an <a> tag
-
-    if (typeof children === 'string') {
-      children = /*#__PURE__*/_react.default.createElement("a", null, children);
-    } // This will return the first child, if multiple are provided it will throw an error
-
-
-    var child = _react.Children.only(children);
-
-    var props = {
-      ref: el => {
-        this.handleRef(el);
-
-        if (child && typeof child === 'object' && child.ref) {
-          if (typeof child.ref === 'function') child.ref(el);else if (typeof child.ref === 'object') {
-            child.ref.current = el;
-          }
-        }
-      },
-      onMouseEnter: e => {
-        if (child.props && typeof child.props.onMouseEnter === 'function') {
-          child.props.onMouseEnter(e);
-        }
-
-        this.prefetch({
-          priority: true
-        });
-      },
-      onClick: e => {
-        if (child.props && typeof child.props.onClick === 'function') {
-          child.props.onClick(e);
-        }
-
-        if (!e.defaultPrevented) {
-          this.linkClicked(e);
-        }
-      }
-    }; // If child is an <a> tag and doesn't have a href attribute, or if the 'passHref' property is
-    // defined, we specify the current 'href', so that repetition is not needed by the user
-
-    if (this.props.passHref || child.type === 'a' && !('href' in child.props)) {
-      props.href = as || href;
-    } // Add the ending slash to the paths. So, we can serve the
-    // "<page>/index.html" directly.
-
-
-    if (false) { var rewriteUrlForNextExport; }
-
-    return _react.default.cloneElement(child, props);
-  }
-
-}
-
-if (true) {
-  var warn = (0, _utils.execOnce)(console.error); // This module gets removed by webpack.IgnorePlugin
-
-  var PropTypes = __webpack_require__(/*! prop-types */ "prop-types");
-
-  var exact = __webpack_require__(/*! prop-types-exact */ "prop-types-exact"); // @ts-ignore the property is supported, when declaring it on the class it outputs an extra bit of code which is not needed.
-
-
-  Link.propTypes = exact({
-    href: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-    as: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-    prefetch: PropTypes.bool,
-    replace: PropTypes.bool,
-    shallow: PropTypes.bool,
-    passHref: PropTypes.bool,
-    scroll: PropTypes.bool,
-    children: PropTypes.oneOfType([PropTypes.element, (props, propName) => {
-      var value = props[propName];
-
-      if (typeof value === 'string') {
-        warn("Warning: You're using a string directly inside <Link>. This usage has been deprecated. Please add an <a> tag as child of <Link>");
-      }
-
-      return null;
-    }]).isRequired
-  });
-}
-
-var _default = Link;
-exports.default = _default;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/client/router.js":
-/*!*************************************************!*\
-  !*** ./node_modules/next/dist/client/router.js ***!
-  \*************************************************/
+/***/ 3:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+module.exports = __webpack_require__(/*! /Users/macbook/Desktop/reactGame/Kids-Game/pages/index.js */"./pages/index.js");
 
 
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+/***/ }),
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-exports.__esModule = true;
-exports.useRouter = useRouter;
-exports.makePublicRouterInstance = makePublicRouterInstance;
-exports.createRouter = exports.withRouter = exports.default = void 0;
+module.exports = require("next/head");
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
-var _router2 = _interopRequireWildcard(__webpack_require__(/*! ../next-server/lib/router/router */ "./node_modules/next/dist/next-server/lib/router/router.js"));
-
-exports.Router = _router2.default;
-exports.NextRouter = _router2.NextRouter;
-
-var _routerContext = __webpack_require__(/*! ../next-server/lib/router-context */ "../next-server/lib/router-context");
-
-var _withRouter = _interopRequireDefault(__webpack_require__(/*! ./with-router */ "./node_modules/next/dist/client/with-router.js"));
-
-exports.withRouter = _withRouter.default;
-/* global window */
-
-var singletonRouter = {
-  router: null,
-  // holds the actual router instance
-  readyCallbacks: [],
-
-  ready(cb) {
-    if (this.router) return cb();
-
-    if (false) {}
-  }
-
-}; // Create public properties and methods of the router in the singletonRouter
-
-var urlPropertyFields = ['pathname', 'route', 'query', 'asPath', 'components', 'isFallback', 'basePath'];
-var routerEvents = ['routeChangeStart', 'beforeHistoryChange', 'routeChangeComplete', 'routeChangeError', 'hashChangeStart', 'hashChangeComplete'];
-var coreMethodFields = ['push', 'replace', 'reload', 'back', 'prefetch', 'beforePopState']; // Events is a static property on the router, the router doesn't have to be initialized to use it
-
-Object.defineProperty(singletonRouter, 'events', {
-  get() {
-    return _router2.default.events;
-  }
+/***/ }),
 
 });
 urlPropertyFields.forEach(field => {
@@ -2195,28 +1863,6 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-is":
-/*!***************************!*\
-  !*** external "react-is" ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-is");
-
-/***/ }),
-
-/***/ "url":
-/*!**********************!*\
-  !*** external "url" ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("url");
 
 /***/ })
 

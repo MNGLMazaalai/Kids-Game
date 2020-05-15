@@ -1,9 +1,7 @@
 // import Head from 'next/head'
-// import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-// import Button from '../components/button'
 // import Link from 'next/link'
 import list from '../data/category.json'
+import utilStyles from '../styles/utils.module.scss'
 
 const images = "/images/categoryPictures/"
 
@@ -52,11 +50,7 @@ export function renderCategory() {
     list.forEach(element => {
         res.push (
             <section className={utilStyles.line} key={count++}> 
-                {
-                    element.map(el => 
-                        renderButton({props: el.photo, name: el.name, color: el.color})
-                    )
-                }
+                {element.map(el => renderButton({props: el.photo, name: el.name, color: el.color}))}
             </section>
         )
     })

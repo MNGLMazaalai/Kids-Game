@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import utilStyles from '../styles/utils.module.css'
+import utilStyles from '../styles/utils.module.scss'
 import { renderBigButton, renderButton, renderCategory } from "../components/button";
-import Link from 'next/link'
-import Button from '../components/button'
-import link from '../data/category.json'
 export default function Home() {
 
     return (

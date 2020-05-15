@@ -29,8 +29,9 @@ export function renderNewButton({props, name}) {
 export function renderButton({props, name, color}) {
     const currentSrc = images + props
     const id = props.replace(/\.png$/, '')
+    let count = 0;
     return (
-        <Link href="./levels/level" as={`./levels/${id}`}>
+        <Link href="./levels/level" as={`./levels/${id}`} key={currentSrc}>
             <section className={utilStyles.normal} key={name}>
                 <section className={utilStyles.newBox}>
                     <section className={utilStyles.newSpace}/>

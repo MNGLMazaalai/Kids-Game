@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import utilStyles from '../styles/utils.module.css'
+import utilStyles from '../styles/utils.module.scss'
 import { renderBigButton, renderButton, renderCategory } from "../components/button";
-import Link from 'next/link'
-import Button from '../components/button'
 
+const images = "/images/categoryPictures/";
 export default function Home() {
     const list = [
         [

@@ -1,5 +1,5 @@
 // import Head from 'next/head'
-// import Link from 'next/link'
+import Link from 'next/link'
 import list from '../data/category.json'
 import newList from '../data/newCategory.json'
 import utilStyles from '../styles/utils.module.scss'
@@ -28,22 +28,25 @@ export function renderNewButton({props, name}) {
 }
 export function renderButton({props, name, color}) {
     const currentSrc = images + props
+    const id = props.replace(/\.png$/, '')
     return (
-        <section className={utilStyles.normal} key={name}>
-            <section className={utilStyles.newBox}>
-                <section className={utilStyles.newSpace}/>
-                <section className={utilStyles.button} style={{backgroundColor: color}}/>
-            </section>
-            <section className={utilStyles.newBox}>
-                <section className={utilStyles.newImagebox}>
-                    <img
-                    className={utilStyles.image}
-                    src={currentSrc}
-                    />
+        <Link href="./levels/level" as={`./levels/${id}`}>
+            <section className={utilStyles.normal} key={name}>
+                <section className={utilStyles.newBox}>
+                    <section className={utilStyles.newSpace}/>
+                    <section className={utilStyles.button} style={{backgroundColor: color}}/>
                 </section>
-                <section className={utilStyles.text}>{name}</section>
+                <section className={utilStyles.newBox}>
+                    <section className={utilStyles.newImagebox}>
+                        <img
+                        className={utilStyles.image}
+                        src={currentSrc}
+                        />
+                    </section>
+                    <section className={utilStyles.text}>{name}</section>
+                </section>
             </section>
-        </section>
+        </Link>
     );
 }
 export function renderCategory() {

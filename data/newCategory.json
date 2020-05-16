@@ -3,5 +3,10 @@
         "photo": "girafe.png",
         "name": "Амьтад",
         "color": "#E6E8FF"
+    },
+    {
+        "photo": "cloth.png",
+        "name": "Хувцас",
+        "color": "#E6F5FF"
     }
 ]

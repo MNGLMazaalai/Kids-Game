@@ -12,7 +12,7 @@ export default function Home() {
             {"Шинээр нэмэгдсэн"}
         </section>
         <section className={utilStyles.slider}>
-            <section className={utilStyles.box}>
+            <section className={utilStyles.newBox}>
                 {renderSlider()}
             </section>
         </section>

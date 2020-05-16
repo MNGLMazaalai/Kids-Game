@@ -31,7 +31,7 @@ export function renderButton({props, name, color}) {
     const id = props.replace(/\.png$/, '')
     let count = 0;
     return (
-        <Link href="./levels/level" as={`./levels/${id}`} key={currentSrc}>
+        <Link href="./levels/level" as={`./levels/${id}`} key={currentSrc} passHref>
             <section className={utilStyles.normal} key={name}>
                 <section className={utilStyles.box}>
                     <section className={utilStyles.newSpace}/>

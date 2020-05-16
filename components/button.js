@@ -10,11 +10,11 @@ export function renderNewButton({props, name}) {
     const currentSrc = images + props
     return (
         <section className={utilStyles.new} key={name}>
-            <section className={utilStyles.box}>
+            <section className={utilStyles.newBox}>
                 <section className={utilStyles.space}/>
                 <section className={utilStyles.newButton}/>
             </section>
-            <section className={utilStyles.box}>
+            <section className={utilStyles.newBox}>
                 <section className={utilStyles.imagebox}>
                     <img
                     className={utilStyles.newImage}
@@ -33,11 +33,11 @@ export function renderButton({props, name, color}) {
     return (
         <Link href="./levels/level" as={`./levels/${id}`} key={currentSrc}>
             <section className={utilStyles.normal} key={name}>
-                <section className={utilStyles.newBox}>
+                <section className={utilStyles.box}>
                     <section className={utilStyles.newSpace}/>
                     <section className={utilStyles.button} style={{backgroundColor: color}}/>
                 </section>
-                <section className={utilStyles.newBox}>
+                <section className={utilStyles.box}>
                     <section className={utilStyles.newImagebox}>
                         <img
                         className={utilStyles.image}

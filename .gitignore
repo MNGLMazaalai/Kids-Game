@@ -1,0 +1,7 @@
+node_modules/
+prod/
+next/
+
+.DS_Store
+.localized
+tsconfig.tsbuildinfo

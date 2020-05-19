@@ -28,11 +28,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+<<<<<<< HEAD
     "/levels/[level]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/next/dist/pages/_error": [
+=======
+    "/levels/level": [
+>>>>>>> e62145ac365f006bd928799c73f4cc8b5a4953ac
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

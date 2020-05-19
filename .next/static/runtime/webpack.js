@@ -113,7 +113,11 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
+<<<<<<< HEAD
 /******/ 	var hotCurrentHash = "4f0c0ec031ccee8d9a59";
+=======
+/******/ 	var hotCurrentHash = "cfb7e11c75c99bc5b5e7";
+>>>>>>> e62145ac365f006bd928799c73f4cc8b5a4953ac
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;

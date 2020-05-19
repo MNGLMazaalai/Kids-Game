@@ -6,13 +6,13 @@ import utilStyles from '../styles/utils.module.scss'
 
 const images = "/images/categoryPictures/"
 
-export function renderNewButton({props, name}) {
+export function renderNewButton({props, name, color}) {
     const currentSrc = images + props
     return (
         <section className={utilStyles.new} key={name}>
             <section className={utilStyles.newBox}>
                 <section className={utilStyles.space}/>
-                <section className={utilStyles.newButton}/>
+                <section className={utilStyles.newButton} style={{backgroundColor: color}}/>
             </section>
             <section className={utilStyles.newBox}>
                 <section className={utilStyles.imagebox}>
@@ -31,7 +31,7 @@ export function renderButton({props, name, color}) {
     const id = props.replace(/\.png$/, '')
     let count = 0;
     return (
-        <Link href="./levels/level" as={`./levels/${id}`} key={currentSrc}>
+        <Link href="./levels/level" as={`./levels/${id}`} key={currentSrc} passHref>
             <section className={utilStyles.normal} key={name}>
                 <section className={utilStyles.box}>
                     <section className={utilStyles.newSpace}/>
